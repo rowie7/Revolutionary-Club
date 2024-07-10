@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="dumbbell_icon_126235.png">
   <title>Revolutionary Club</title>
+  <script src="https://kit.fontawesome.com/21cb3d5720.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -18,9 +19,9 @@
           </div>
     
    
-
+<nav>
     <div class="navbar">
-      <ul>
+      <ul id ="sidemenu">
         <li><a href="#home">Home</a></li>
         <li><a href="#Programs">Programs</a></li>
         <li><a href="#Facts">Facts</a></li>
@@ -28,18 +29,22 @@
         <li><a href="#Plans">Plans</a></li>
         <li><a href="#Contact">Contact</a></li>
         <li><button id="theme-button">Toggle Dark Mode</button></li>
+        <i class ="fas fa-times" onclick="closemenu()"></i>
       </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+      </div>
+</nav>
     </div>
 
-    <div class="container"> <!-- Part 2: Flexbox Layout Starter Code -->
+    <div class="home"> <!-- Part 2: Flexbox Layout Starter Code -->
       <div class="item"></div>
       <div class="item"></div>
       <div class="item"></div>
     </div>
   </div> <!-- End of .header-button -->
 
-  <div id="about">
-    <div class="header-container">
+  <div id="About">
+    <div class="container">
       <section id="home">
         <h1 class="title">Revolutionary Club</h1>
         <h3>Unleash your Potential!</h3>
@@ -52,11 +57,12 @@
 
     <!-- About Section -->
     <section id="About">
+      <div class="container"></div>
       <h2>About My Topic</h2>
       <h2>What is the Revolutionary Club?</h2>
       <!-- Data -->
       <p>The Revolutionary Club is a gym that motivates people who want to start working out to not just improve their health but also improve themselves physically and mentally. We provide tips and support based on personal goals.</p>
-      <img src="equipment.jpg" alt="Gym Equipment" />
+      <img src="equipment.jpg" class = "equipment"/>
       <h4>This is how you can get yourself going in the gym</h4>
     </section>
 
