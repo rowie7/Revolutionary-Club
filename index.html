@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,109 +8,84 @@
   <title>Revolutionary Club</title>
   <script src="https://kit.fontawesome.com/21cb3d5720.js" crossorigin="anonymous"></script>
 </head>
-
-
-   
-      <div>
-        <section id="home">
-          <div class="revealable">
-          <h1 class="title">Revolutionary Club</h1>
-          </div>
-    
-   
-<nav>
-    <div class="navbar">
-      <ul id ="sidemenu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#Programs">Programs</a></li>
-        <li><a href="#Facts">Facts</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Plans">Plans</a></li>
-        <li><a href="#Contact">Contact</a></li>
-        <li><button id="theme-button">Toggle Dark Mode</button></li>
-        <i class ="fas fa-times" onclick="closemenu()"></i>
-      </ul>
-      <i class="fas fa-bars" onclick="openmenu()"></i>
-      </div>
-</nav>
-    </div>
-
-    <div class="home"> <!-- Part 2: Flexbox Layout Starter Code -->
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-  </div> <!-- End of .header-button -->
-
-  <div id="About">
+<body>
+  <nav>
+    <img src="dumbbell_icon_126235.png" class="logo">
+    <ul id="sidemenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#Programs">Programs</a></li>
+      <li><a href="#Facts">Facts</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Plans">Plans</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+      <i class="fas fa-times" onclick="closemenu()"></i>
+    </ul>
+    <i class="fas fa-bars" onclick="openmenu()"></i>
+  </nav>
+  <div id="home">
     <div class="container">
-      <section id="home">
+      <div class="header-text">
         <h1 class="title">Revolutionary Club</h1>
         <h3>Unleash your Potential!</h3>
         <div class="header-button">
           <button type="button">Join our Club</button>
           <button type="button">More Information</button>
         </div>
-      </section>
-    </div> <!-- End of .header-container -->
-
-    <!-- About Section -->
-    <section id="About">
-      <div class="container"></div>
-      <h2>About My Topic</h2>
-      <h2>What is the Revolutionary Club?</h2>
-      <!-- Data -->
-      <p>The Revolutionary Club is a gym that motivates people who want to start working out to not just improve their health but also improve themselves physically and mentally. We provide tips and support based on personal goals.</p>
-      <img src="equipment.jpg" class = "equipment"/>
-      <h4>This is how you can get yourself going in the gym</h4>
-    </section>
-
-    <!-- Facts Section -->
-    <section id="Facts">
+      </div>
+      <div class="circle-bg"></div>
+    </div>
+  </div>
+  <div id="About">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="equipment.jpg" class="equipment">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About My Topic</h1>
+          <h2>What is the Revolutionary Club?</h2>
+          <p>The Revolutionary Club is a gym that motivates people who want to start working out to not just improve their health but also improve themselves physically and mentally. We provide tips and support based on personal goals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Facts">
+    <div class="container">
       <h2>Facts</h2>
       <ul>
         <li><img src="chart.png" alt="Chart" height="300" width="300"></li>
       </ul>
-    </section>
-
-    <!-- Impact Section -->
-    <section id="Impact">
+    </div>
+  </div>
+  <div id="Impact">
+    <div class="container">
       <h2>How can the Revolutionary Club have a big impact?</h2>
       <p>We offer a variety of plans based on people's fitness goals, including programs and workouts for burning fat, building muscle and strength, losing weight, or maintaining overall fitness.</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/U9ENCvFf9yQ" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <!-- Food Plans Section -->
-    <section id="FoodPlans">
+    </div>
+  </div>
+  <div id="FoodPlans">
+    <div class="container">
       <h2>Food Plans</h2>
       <h2>Need food plans?</h2>
       <img src="food.jpg" alt="Food" height="300" width="300">
       <p><a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/eat/calories.htm">Healthy Plans</a></p>
-    </section>
-
-    <div class="petition" id="petition">
-
-      <h2>Sign Our Form  📢</h2>
+    </div>
+  </div>
+  <div id="petition">
+    <div class="container">
+      <h2>Sign Our Form 📢</h2>
       <div class="petition-container">
-
-
         <div class="petition-para">
-          <p>
-            The staff at revolutionary club is planning on opening more gyms across the city. We ask you to sign this form as a support for this plan.
-          </p>
-
+          <p>The staff at revolutionary club is planning on opening more gyms across the city. We ask you to sign this form as a support for this plan.</p>
         </div>
-
         <div class="signatures">
           <p>🖊️ DJ from Brooklyn supports this.</p>
           <p>🖊️ Amy from Queens supports this.</p>
           <p>🖊️ Teresa from Harlem supports this.</p>
-
         </div>
-
       </div>
-
-      <!--- Sign Petition Form --->
       <form id="sign-petition" title="sign-petition">
         <label>Name:</label>
         <input>
@@ -120,47 +94,35 @@
         <label>Email:</label>
         <input>
       </form>
-
-      <!--- Sign Now Button --->
       <button id="sign-now-button">Sign Now</button>
-
+      <div class="signatures"></div>
     </div>
-    <div class="signatures">
-      <!-- signatures go here -->
-    </div>
-    <!-- Modal -->
-    <div id="thanks-modal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div id="modal-text-container">
-          <p>thanks for the support!</p>
-          <!-- button here (stretch feature) -->
-          <button id="close-modal-button">Close</button>
-        </div>
-        <img src="thank you.jpg" />
-      </div>
-      </div>
-    <!-- Footer -->
-    <footer class="footer">
-      <button type="button">Need Help?</button>
-    </footer>
   </div>
-
+  <div id="thanks-modal" class="modal">
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p>Thanks for the support!</p>
+        <button id="close-modal-button">Close</button>
+      </div>
+      <img src="thank_you.jpg">
+    </div>
+  </div>
+  <footer class="footer">
+    <button type="button">Need Help?</button>
+  </footer>
   <div>
     <section id="Contact">
-      <h3>Contact:</h3>
-      <p>
-        <a href="https://www.linkedin.com/in/roelchristianmedrano/">My Linkedin</a><br>
-        email: revolutionaryclub@gmail.com<br>
-        phone number: 718-123-XXXX
-      </p>
+      <div class="container">
+        <h3>Contact:</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/roelchristianmedrano/">My Linkedin</a><br>
+          email: revolutionaryclub@gmail.com<br>
+          phone number: 718-123-XXXX
+        </p>
+        <a href="#home">Top of Page</a>
+      </div>
     </section>
-    <a href="#home">Top of Page</a>
   </div>
   <script src="index.js"></script>
-
-  
 </body>
-
 </html>
