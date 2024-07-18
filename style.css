@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: #080808;
+  background: lightgray;
   color: #fff;
   min-height: 100vh;
   margin: 0;
@@ -71,7 +71,7 @@ nav ul li a:hover::after {
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #080808;
+  background-color: lightgray;
   position: relative;
   z-index: 1;
 }
@@ -223,4 +223,25 @@ footer button:hover {
   .row {
     flex-direction: column;
   }
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode nav {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode nav ul li a {
+  color: #fff;
+}
+
+.dark-mode .modal-content {
+  background: #444;
+}
+
+.dark-mode footer {
+  background: rgba(255, 255, 255, 0.2);
 }
