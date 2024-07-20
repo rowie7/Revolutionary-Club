@@ -10,7 +10,7 @@
 </head>
 <body>
   <nav>
-    <img src="dumbbell_icon_126235.png" class="logo">
+    <img src="images/dumbbell_icon_126235.png" class="logo">
     <ul id="sidemenu">
       <li><a href="#home">Home</a></li>
       <li><a href="#Programs">Programs</a></li>
@@ -26,12 +26,6 @@
   <div id="home">
     <div class="container">
       <div class="header-text">
-        <h1 class="title">Revolutionary Club</h1>
-        <h3>Unleash your Potential!</h3>
-        <div class="header-button">
-          <button type="button">Join our Club</button>
-          <button type="button">More Information</button>
-        </div>
       </div>
       <div class="circle-bg"></div>
     </div>
@@ -40,89 +34,152 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="equipment.jpg" class="equipment">
+          <img src="images/pump.jpg" class="selfie">
         </div>
         <div class="about-col-2">
-          <h1 class="sub-title">About My Topic</h1>
-          <h2>What is the Revolutionary Club?</h2>
-          <p>The Revolutionary Club is a gym that motivates people who want to start working out to not just improve their health but also improve themselves physically and mentally. We provide tips and support based on personal goals.</p>
+          <h1 class="sub-title">Revolutionary Club</h1>
+          <p>The Revolutionary Club is a gym that motivates people who want to start working out to not just improve their health but also improve themselves physically and mentally. We provide tips and support based on personal goals</p>
+          <div class="table-titles">
+            <p class="tab-links active-link" onclick="opentab('powerlifting')">Powerlifting</p>
+            <p class="tab-links" onclick="opentab('experience')">Bodybuilding</p>
+            <p class="tab-links" onclick="opentab('education')">Weightloss</p>
+          </div>
+          <div class="tab-contents active-tab" id="powerlifting">
+            <ul>
+              <li><span>What is powerlifting?</span><br>Powerlifting is a sport that utlizes in three lifts bench press, squat, and deadlift to measure the athlete's absolute strength.</li>
+              <li><span>How can you get better at powerlifting?</span><br><ul><li>Step 1: Be consistent, follow your program and make sure you do the amount of reps it tells you to do.</li>
+              <li>Step 2: Stretch properly!!!! Make sure each part of your body is well stretched and good before you start going into your lifts. Since you do not want your body to be as stiff as you are about to start. </li>
+              <li>Step 3: Make sure you are hydrated, hydration is key. Get enough electrolytes into your body so you are able to keep going in your workout as it will get challenging as time goes on.</li>
+              <li>Step 4: MOST IMPORTANTLY, RECOVER! You need your food and rest so your body can handle all of the lifting you did for the day and you will get stronger.</li>
+              </ul></li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>HRM Engineering June 2022 - August 2022</span><br>Enhanced project precision through field verification with engineers and clients</li>
+              <li><span>Queens Library</span><br>Automated LACES database projects and extracted data from the LACES database cleaned the data with automated pivot tables</li>
+              <li><span>Project New Yorker</span><br>Enhanced team outreach in student enrollment for Coding and ESL classes in Jamaica</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Graduated 2021</span><br>High School for Construction Trades, Engineering, and Architecture</li>
+              <li><span>2021-Present</span><br>CUNY Queens College</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="Facts">
+  <div id="services">
     <div class="container">
-      <h2>Facts</h2>
-      <ul>
-        <li><img src="chart.png" alt="Chart" height="300" width="300"></li>
-      </ul>
-    </div>
-  </div>
-  <div id="Impact">
-    <div class="container">
-      <h2>How can the Revolutionary Club have a big impact?</h2>
-      <p>We offer a variety of plans based on people's fitness goals, including programs and workouts for burning fat, building muscle and strength, losing weight, or maintaining overall fitness.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/U9ENCvFf9yQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div id="FoodPlans">
-    <div class="container">
-      <h2>Food Plans</h2>
-      <h2>Need food plans?</h2>
-      <img src="food.jpg" alt="Food" height="300" width="300">
-      <p><a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/eat/calories.htm">Healthy Plans</a></p>
-    </div>
-  </div>
-  <div id="petition">
-    <div class="container">
-      <h2>Sign Our Form 📢</h2>
-      <div class="petition-container">
-        <div class="petition-para">
-          <p>The staff at revolutionary club is planning on opening more gyms across the city. We ask you to sign this form as a support for this plan.</p>
-        </div>
-        <div class="signatures">
-          <p>🖊️ DJ from Brooklyn supports this.</p>
-          <p>🖊️ Amy from Queens supports this.</p>
-          <p>🖊️ Teresa from Harlem supports this.</p>
+      <h1 class="sub-title">Progress Videos</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-helmet-safety"></i>
+          <h2>HRM Engineering</h2>
+          <p>Prepared and setup mechanical, electrical, plumbing drawings and calculations in AutoCAD. Enhanced project precision through field verification with engineers and clients. Utilized XREFS to maintain design consistency with plumbing, electrical, and mechanical drawings</p>
+          <a href="#">Learn More</a>
         </div>
       </div>
-      <form id="sign-petition" title="sign-petition">
-        <label>Name:</label>
-        <input>
-        <label>City:</label>
-        <input>
-        <label>Email:</label>
-        <input>
-      </form>
-      <button id="sign-now-button">Sign Now</button>
-      <div class="signatures"></div>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-book"></i>
+          <h2>Queens Library</h2>
+          <p>Automated LACES database projects, saving 10-30 hours weekly and up to $450 in costs, showcasing tech's value. Used excel to extract data from the LACES database, cleaned the data with automated pivot tables, and filtered the data. Enhanced efficiency by automating RPA and UI Path Studio X in collaboration with a team of 6 people.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-people-group"></i>
+          <h2>Project New Yorker</h2>
+          <p>Enhanced team outreach in student enrollment for Coding and ESL classes in Jamaica. Launched a social media initiative to promote M-pox and Covid-19 vaccination during pregnancy. Conducted an in-depth examination of community demographics with a 90% accuracy in identifying essential services.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div id="thanks-modal" class="modal">
-    <div class="modal-content">
-      <div id="modal-text-container">
-        <p>Thanks for the support!</p>
-        <button id="close-modal-button">Close</button>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/engineering.jpg">
+          <div class="layer">
+            <h3>XREFS</h3>
+            <p>These external references in AutoCAD are used for engineers to refer as they creating floor plans, lighting plans, and engineering plans.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/automation.jpg">
+          <div class="layer">
+            <h3>Automating LACES database</h3>
+            <p>Used excel to extract data from the database as pivot tables were used to clean and filter the data.</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/community.jpg">
+          <div class="layer">
+            <h3>Community Outreach</h3>
+            <p>Reached out to the community of Jamaica to promote ESL and coding classes throughout the community.</p>
+          </div>
+        </div>
       </div>
-      <img src="thank_you.jpg">
+      <a href="#" class="btn">See More</a>
     </div>
   </div>
-  <footer class="footer">
-    <button type="button">Need Help?</button>
-  </footer>
-  <div>
-    <section id="Contact">
-      <div class="container">
-        <h3>Contact:</h3>
-        <p>
-          <a href="https://www.linkedin.com/in/roelchristianmedrano/">My Linkedin</a><br>
-          email: revolutionaryclub@gmail.com<br>
-          phone number: 718-123-XXXX
-        </p>
-        <a href="#home">Top of Page</a>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>roelchristianmedrano@gmail.com</p>
+          <p>123-456-7890</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/roelchristianmedrano/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
       </div>
-    </section>
+    </div>
+    <div class="copyright"></div>
+    <p> Copyright © Roel Christian Medrano</p>
   </div>
-  <script src="index.js"></script>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
 </body>
 </html>
